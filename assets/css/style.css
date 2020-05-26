@@ -1,0 +1,79 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&family=Roboto:wght@300;400;500&display=swap');
+
+@font-face {
+    font-family: 'Run';
+    src:    url('../fonts/Run to the Hills.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bill';
+    src:    url('../fonts/Billionaire.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Body */
+
+body {
+    background: url("../images/background.jpg");
+    background-position: fixed;
+}
+
+/* header */ 
+
+#page-header { 
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#page-title {
+    color:ivory;
+    font-family: 'Run';
+    font-size: 80px;
+}
+
+/* Game Area */
+
+#game-area {
+    display: flex;
+    justify-content: center;
+}
+
+#play-area {
+    height:600px;
+    background-color: ivory;
+    opacity: 0.75;
+}
+
+.player-header {
+    text-align: center;
+    padding-top: 30px;
+    font-family: Jost;
+}
+
+#player1 {
+    display: block;
+}
+#dice-area {
+    height: 600px;
+    display: inline-block;
+    justify-content: center;
+    }
+#dice-area ul {
+    display:flex;
+    justify-content: center;
+    padding: 0;
+    
+    
+}
+#dice-area ul li {
+    list-style:none;
+    display: inline;  
+    align-self: middle;
+    
+    
+}

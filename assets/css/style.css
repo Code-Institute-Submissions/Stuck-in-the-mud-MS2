@@ -45,9 +45,10 @@ body {
 
 #play-area {
     height:600px;
-    background-color: ivory;
-    opacity: 0.75;
+    background-color: rgba(237, 233, 232, 0.75);
 }
+/* Player Areas */
+
 
 .player-header {
     text-align: center;
@@ -55,25 +56,68 @@ body {
     font-family: Jost;
 }
 
-#player1 {
-    display: block;
+.score-current {
+    position:static;
+    z-index: 1;
+    height: 300px;
+    margin:10px;
+    background-color: grey;
+    font-family: Jost;
+    color:ivory;
+    font-size:150px;
+    text-align: center;
 }
+.score-output {
+    height:200px;
+    margin:10px;
+    background-color:#b52222;
+    font-family: Jost;
+}
+.score-heading {
+    color: ivory;
+    text-align: center;
+}
+
+/* Center Dice Area */
+
+
+
 #dice-area {
     height: 600px;
     display: inline-block;
     justify-content: center;
     }
+#banner-area {
+    height: 250px;
+}
+#round-counter {
+    text-align: center;
+    padding-top: 30px;
+    font-family: Jost;
+}
+
+
 #dice-area ul {
     display:flex;
     justify-content: center;
+    height: 250px;
     padding: 0;
-    
-    
 }
 #dice-area ul li {
     list-style:none;
     display: inline;  
     align-self: middle;
-    
-    
 }
+#button-box {
+    display: flex;
+    justify-content: center;
+}
+
+#roll-button {
+    opacity: 1;
+}
+
+
+/* Player 2 */
+
+

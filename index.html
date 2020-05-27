@@ -1,65 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 
-<link rel="stylesheet" href="assets/css/style.css">
-<script src="assets/js/index.js"></script>
-<title>Stuck In The Mud</title>
-</head>
-<body>
-<header>
-    <div class = "row no-gutters" id="page-header">
-        <h1 id="page-title">Stuck In The Mud !
-        </h1>
-    </div>
-</header>
-<section class="row no-gutters" id="game-area">
-    <div class="col-10" id="play-area">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/index.js"></script>
+    <title>Stuck In The Mud</title>
+  </head>
+  <body>
+    <header>
+      <div class="row no-gutters" id="page-header">
+        <h1 id="page-title">Stuck In The Mud !</h1>
+      </div>
+    </header>
+    <section class="row no-gutters" id="game-area">
+      <div class="col-10" id="play-area">
         <div class="row no-gutters" id="players-area">
-            <div class="col-3" id="player1">
-                <div><h3 class="player-header">Player 1</h3>
-                </div>
-                <div class="score-output" id="player1-score">
-               
-                </div>
+          <div class="col-3" id="player0">
+            <div><h3 class="player-header">Player 1</h3></div>
+            <div class="score-current" id="player0-current">
+              <div class="score-heading"><h4>Round Score</h4></div>
+              <div class="current-score-box" id="score-box-0"></div>
             </div>
-            <div class="col-6" id="dice-area">
-                 <ul>
-                    <li id="diceA"></li>
-                    <li id="diceB"></li>
-                    <li id="diceC"></li>
-                    <li id="diceD"></li>
-                    <li id="diceE"></li>
-                </ul>
+            <div class="score-output" id="player0-score">
+                <div class="score-heading"><h4>Total Score</h4></div>
             </div>
-            <div class="col-3" id="player2">
-                <div><h3 class="player-header">Player 2</h3></div>
-                <div class="score-output" id="player2-score">
-                </div>
+          </div>
+          <div class="col-6" id="dice-area">
+            <div id="banner-area">
+              <div id="round-counter">
+                <h3>Round #</h3>
+              </div>
             </div>
+            <ul>
+              <li id="dice1">
+                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              </li>
+              <li id="dice2">
+                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              </li>
+              <li id="dice3">
+                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              </li>
+              <li id="dice4">
+                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              </li>
+              <li id="dice5">
+                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              </li>
+            </ul>
+            <div class="col-12" id="button-box">
+              <button
+                type="button"
+                class="btn btn-secondary btn-lg"
+                id="roll-button"
+              >
+                Roll!
+              </button>
+            </div>
+          </div>
+          <div class="col-3" id="player1">
+            <div><h3 class="player-header">Player 2</h3></div>
+            <div class="score-current" id="player1-current">
+            <div class="current-score-heading"><h4>Round Score</h4></div>
+              <div class="current-score-box" id="score-box-1"></div>
+            </div>
+            <div class="score-output" id="player1-score">
+                <div class="score-heading"><h4>Total Score</h4></div>
+            </div>
+          </div>
         </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-</section>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<script src="assets/js/index.js"></script>
-</body>
+      </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>

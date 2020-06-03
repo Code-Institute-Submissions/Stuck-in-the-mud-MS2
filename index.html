@@ -14,9 +14,9 @@
     />
 
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/index.js"></script>
     <title>Stuck In The Mud</title>
   </head>
+
   <body>
     <header>
       <div class="row no-gutters" id="page-header">
@@ -27,62 +27,115 @@
       <div class="col-10" id="play-area">
         <div class="row no-gutters" id="players-area">
           <div class="col-3" id="player0">
-            <div><h3 class="player-header">Player 1</h3></div>
+            <div >
+              <h3 class="player-header" id="player-header-0">Player 1</h3>
+            </div>
             <div class="score-current" id="player0-current">
-              <div class="score-heading"><h4>Round Score</h4></div>
+              <div class="score-heading">
+                <h4>Round Score</h4>
+              </div>
               <div class="current-score-box" id="score-box-0"></div>
             </div>
-            <div class="score-output" id="player0-score">
-                <div class="score-heading"><h4>Total Score</h4></div>
+            <div class="score-output" >
+              <div class="score-heading">
+                <h4>Total Score</h4>
+              </div>
+              <div class="score-total" id="player-score-0"></div>
             </div>
           </div>
           <div class="col-6" id="dice-area">
             <div id="banner-area">
-              <div id="round-counter">
-                <h3>Round #</h3>
+              <div class="roundNumbers">
+                <h3 id="round-counter">Round</h3>
+                <h4 id="unstuckNumber">Unstuck Dice</h4>
               </div>
             </div>
             <ul>
-              <li id="dice1">
-                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              <li>
+                <img
+                  id="dice1"
+                  src="assets/images/dots-1.png"
+                  alt="dice"
+                  class="dice"
+                />
               </li>
-              <li id="dice2">
-                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              <li>
+                <img
+                  id="dice2"
+                  src="assets/images/dots-1.png"
+                  alt="dice"
+                  class="dice"
+                />
               </li>
-              <li id="dice3">
-                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              <li>
+                <img
+                  id="dice3"
+                  src="assets/images/dots-1.png"
+                  alt="dice"
+                  class="dice"
+                />
               </li>
-              <li id="dice4">
-                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              <li>
+                <img
+                  id="dice4"
+                  src="assets/images/dots-1.png"
+                  alt="dice"
+                  class="dice"
+                />
               </li>
-              <li id="dice5">
-                <img src="assets/images/dots-1.png" alt="dice" class="dice">
+              <li>
+                <img
+                  id="dice5"
+                  src="assets/images/dots-1.png"
+                  alt="dice"
+                  class="dice"
+                />
               </li>
             </ul>
             <div class="col-12" id="button-box">
               <button
                 type="button"
                 class="btn btn-secondary btn-lg"
-                id="roll-button"
-              >
+                id="roll-button" 
+              disabled >
                 Roll!
               </button>
             </div>
           </div>
           <div class="col-3" id="player1">
-            <div><h3 class="player-header">Player 2</h3></div>
+            <div >
+              <h3 class="player-header active" id="player-header-1" >Player 2</h3>
+            </div>
             <div class="score-current" id="player1-current">
-            <div class="current-score-heading"><h4>Round Score</h4></div>
+              <div class="current-score-heading">
+                <h4>Round Score</h4>
+              </div>
               <div class="current-score-box" id="score-box-1"></div>
             </div>
-            <div class="score-output" id="player1-score">
-                <div class="score-heading"><h4>Total Score</h4></div>
+            <div class="score-output">
+              <div class="score-heading">
+                <h4>Total Score</h4>
+              </div>
+              <div class="score-total" id="player-score-1"></div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <footer>
+      <div class="row no-gutters">
+        <div class="col-12 restart-buttons">
+          <button
+            type="button"
+            class="btn btn-secondary btn-lg"
+            id="newGameButton"
+          >
+            New Game
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>

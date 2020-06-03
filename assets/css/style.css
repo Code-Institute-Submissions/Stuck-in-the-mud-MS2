@@ -54,11 +54,20 @@ body {
     text-align: center;
     padding-top: 30px;
     font-family: Jost;
+    content: "\221E";
+    font-size: 30px;
+    
 }
+.active .player-header::after {
+    content: "\221E";
+    font-size: 30px;
+    color: #b52222;
+}
+
+
 
 .score-current {
     position:static;
-    z-index: 1;
     height: 300px;
     margin:10px;
     background-color: grey;
@@ -78,9 +87,18 @@ body {
     text-align: center;
 }
 
+.score-total {
+    position:static;
+    color: ivory;
+    font-size:100px;
+    text-align: center;
+}
+
 /* Center Dice Area */
 
-
+#unstuckNumber {
+    color:#b52222;
+}
 
 #dice-area {
     height: 600px;
@@ -90,7 +108,7 @@ body {
 #banner-area {
     height: 250px;
 }
-#round-counter {
+.roundNumbers {
     text-align: center;
     padding-top: 30px;
     font-family: Jost;
@@ -108,16 +126,28 @@ body {
     display: inline;  
     align-self: middle;
 }
+.dice {
+    padding:4px;
+}
+
 #button-box {
     display: flex;
     justify-content: center;
 }
 
-#roll-button {
-    opacity: 1;
 }
 
+.roll-button:active {
+    opacity: 1;
+}
 
 /* Player 2 */
 
 
+/* Footer */
+
+.restart-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}

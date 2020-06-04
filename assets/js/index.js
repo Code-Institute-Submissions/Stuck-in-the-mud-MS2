@@ -1,11 +1,12 @@
 var scores, roundScore, activePlayer, roundCounter, unstuckDice, previousRound, roundNumber, previousStuck, roundStuck, gameActive;
 
-scores = [0,0];
 roundScore = 0;
 activePlayer = 0;
 unstuckDice = 5;
 previousStuck = 0;
 roundNumber = 0; 
+
+// Hide elements on page load
 
 $(document).ready(function() {
   $('.dice').css('display','none');
@@ -19,18 +20,16 @@ function roll() {
     return (Math.floor(Math.random() * 6) + 1);
 };
 
-//New Game - Init - Reset
+//New Game - Init & Reset
 
 $('#newGameButton').on('click', function(){
-
 // Reset scores
-    roundScore = 0;
-    roundCounter = 1;
+   
     scores=[0,0];
     unstuckDice = 5;
     previousStuck = 0;
     gameActive = true;
-    activePlayer = 0;
+    
 
 //hide elements
     $('.dice').css('display','none');
@@ -39,7 +38,8 @@ $('#newGameButton').on('click', function(){
    
 
 //Reset Visual Scores
-
+    roundCounter = 1;
+    roundScore = 0;
     $('#score-box-0').text('0');
     $('#score-box-1').text('0');
     $('#player-score-0').text('0');
@@ -47,9 +47,10 @@ $('#newGameButton').on('click', function(){
     $('#round-counter').text('Round ' + roundCounter);
 
 //Set Player 0 as Active , Enable Roll Button
-
-$('.player-header-1').addClass('active');
-$('#roll-button').attr('disabled' , 'false');
+activePlayer = 0;
+$('#player-header-'+ activePlayer).addClass('active-player');
+$('#player-header-1').removeClass('active-player');
+// $('#roll-button').attr('disabled' , 'false');
 });
 
 
@@ -197,16 +198,13 @@ $('#roll-button').on('click', function() {
             $('#unstuckNumber').text('Unstuck Dice '+ roundStuck);
             $('#unstuckNumber').css('display','block');
 
-console.log(dice1);
-console.log(dice2);
-console.log(dice3);
-console.log(dice4);
-console.log(dice5);
-console.log(roundScore);
-
 //Ending the Round
 
         if (roundStuck <= 0) {
+            $('#stuckModal').modal();
+            $('.dice').css('display','none');
+            scores[activePlayer] += roundScore;
+            $('#player-score-'+ activePlayer).text(roundScore);
             switchPlayer();
       };
 });
@@ -214,22 +212,38 @@ console.log(roundScore);
 // Swtich Player Function 
 
 function switchPlayer() { 
-    scores[activePlayer] += roundScore;
-    $('#player-score-'+ activePlayer).text(roundScore);
+    
+    
     $('#score-box-0').text('0');
     $('#score-box-1').text('0');
-console.log(scores[activePlayer]); 
-
+ 
         if (activePlayer === 0) {
-            activePlayer = 1; 
+            activePlayer = 1;
+            $('#player-header-0').removeClass('active-player');
+            $('#player-header-'+ activePlayer).addClass('active-player'); 
         } else {
             activePlayer = 0;
             roundCounter += 1;
-            $()
+            $('#player-header-1').removeClass('active-player');
+            $('#player-header-'+ activePlayer).addClass('active-player');
+            $('#round-counter').text('Round ' + roundCounter); 
         }; 
+
     unstuckDice = 5;
     $('#unstuckNumber').text('Unstuck Dice '+ unstuckDice);
       roundScore = 0;
+      previousStuck = 0;
 }
-//Update round score function 
+
+// Game ending and Winner
+
+if (roundCounter === 6) {
+    if (scores[0] > scores[1]) {
+        alert('Player 1 Wins !!!');
+        $('#player-header-0').text('WINNER');
+    } else {
+        alert('Player 2 Wins !!!');
+         $('#player-header-1').text('WINNER');
+    }
+};
 

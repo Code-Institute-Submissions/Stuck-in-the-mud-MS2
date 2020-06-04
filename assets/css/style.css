@@ -54,17 +54,18 @@ body {
     text-align: center;
     padding-top: 30px;
     font-family: Jost;
-    content: "\221E";
     font-size: 30px;
     
 }
-.active .player-header::after {
-    content: "\221E";
-    font-size: 30px;
-    color: #b52222;
+
+.active-player::after {
+    content:"\22B2";
+    color:#c7c038;
+    font-size: 60px;    
+    position: absolute;
+    top: 9px;
+     
 }
-
-
 
 .score-current {
     position:static;
@@ -79,7 +80,7 @@ body {
 .score-output {
     height:200px;
     margin:10px;
-    background-color:#b52222;
+    background-color:#0f1587;
     font-family: Jost;
 }
 .score-heading {
@@ -134,13 +135,6 @@ body {
     display: flex;
     justify-content: center;
 }
-
-}
-
-.roll-button:active {
-    opacity: 1;
-}
-
 /* Player 2 */
 
 
@@ -151,3 +145,11 @@ body {
     justify-content: center;
     padding: 50px;
 }
+
+/* Modals */
+
+#stuckModal .modal-content {
+    text-align: center;
+}
+
+

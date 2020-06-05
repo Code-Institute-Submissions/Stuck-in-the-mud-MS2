@@ -54,6 +54,7 @@ body {
     text-align: center;
     padding-top: 30px;
     font-family: Jost;
+    color: ivory;
     font-size: 30px;
     
 }
@@ -65,6 +66,10 @@ body {
     position: absolute;
     top: 9px;
      
+}
+
+.active-area {
+    background-color: rgba(13, 17, 18, 0.65);
 }
 
 .score-current {
@@ -115,7 +120,6 @@ body {
     font-family: Jost;
 }
 
-
 #dice-area ul {
     display:flex;
     justify-content: center;
@@ -135,21 +139,35 @@ body {
     display: flex;
     justify-content: center;
 }
-/* Player 2 */
 
 
-/* Footer */
+/* Footer & Modals */
 
 .restart-buttons {
     display: flex;
     justify-content: center;
     padding: 50px;
 }
-
-/* Modals */
-
-#stuckModal .modal-content {
+#welcomeModal {
     text-align: center;
+}
+#welcomeModal img {
+    width: 25px;
+}
+
+#stuckModal .modal-dialog {
+    text-align: center;
+}
+.modal-footer {
+    justify-content: center;
+}
+
+#winnerTitle {
+    text-align: center;
+}
+
+#winnerModal img {
+    width: 766px;
 }
 
 

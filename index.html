@@ -1,129 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Stuck In The Mud</title>
+  </head>
 
-	<link rel="stylesheet" href="assets/css/style.css" />
-	<title>Stuck In The Mud</title>
-</head>
-
-<body>
-	<header>
-		<div class="row no-gutters" id="page-header">
-			<h1 id="page-title">Stuck In The Mud !</h1>
-		</div>
-	</header>
-	<section class="row no-gutters" id="game-area">
-		<div class="col-10" id="play-area">
-			<div class="row no-gutters" id="players-area">
-				<div class="col-3" id="player0">
-					<div>
-						<h3 class="player-header" id="player-header-0">Player 1</h3>
-					</div>
-					<div class="score-current" id="player0-current">
-						<div class="score-heading">
-							<h4>Round Score</h4>
-						</div>
-						<div class="current-score-box" id="score-box-0"></div>
-					</div>
-					<div class="score-output">
-						<div class="score-heading">
-							<h4>Total Score</h4>
-						</div>
-						<div class="score-total" id="player-score-0"></div>
-					</div>
-				</div>
-				<div class="col-6" id="dice-area">
-					<div id="banner-area">
-						<div class="roundNumbers">
-							<h3 id="round-counter">Round</h3>
-							<h4 id="unstuckNumber">Unstuck Dice</h4>
-						</div>
-					</div>
-					<ul>
-						<li>
-							<img
+  <body>
+    <header>
+      <div class="row no-gutters" id="page-header">
+        <h1 id="page-title">Stuck In The Mud !</h1>
+      </div>
+    </header>
+    <section class="row no-gutters" id="game-area">
+      <div class="col-10" id="play-area">
+        <div class="row no-gutters" id="players-area">
+          <div class="col-3 active-area" id="player0">
+            <div>
+              <h3 class="player-header" id="player-header-0">Player 1</h3>
+            </div>
+            <div class="score-current" id="player0-current">
+              <div class="score-heading">
+                <h4>Round Score</h4>
+              </div>
+              <div class="current-score-box" id="score-box-0"></div>
+            </div>
+            <div class="score-output">
+              <div class="score-heading">
+                <h4>Total Score</h4>
+              </div>
+              <div class="score-total" id="player-score-0"></div>
+            </div>
+          </div>
+          <div class="col-6" id="dice-area">
+            <div id="banner-area">
+              <div class="roundNumbers">
+                <h3 id="round-counter">Round</h3>
+                <h4 id="unstuckNumber">Unstuck Dice</h4>
+              </div>
+            </div>
+            <ul>
+              <li>
+                <img
                   id="dice1"
                   src="assets/images/dots-1.png"
                   alt="dice"
                   class="dice"
                 />
               </li>
-						<li>
-							<img
+              <li>
+                <img
                   id="dice2"
                   src="assets/images/dots-1.png"
                   alt="dice"
                   class="dice"
                 />
               </li>
-						<li>
-							<img
+              <li>
+                <img
                   id="dice3"
                   src="assets/images/dots-1.png"
                   alt="dice"
                   class="dice"
                 />
               </li>
-						<li>
-							<img
+              <li>
+                <img
                   id="dice4"
                   src="assets/images/dots-1.png"
                   alt="dice"
                   class="dice"
                 />
               </li>
-						<li>
-							<img
+              <li>
+                <img
                   id="dice5"
                   src="assets/images/dots-1.png"
                   alt="dice"
                   class="dice"
                 />
               </li>
-					</ul>
+            </ul>
 
-					<div class="col-12" id="button-box">
-						<button
+            <div class="col-12" id="button-box">
+              <button
                 type="button"
-                class="btn btn-secondary btn-lg "
+                class="btn btn-secondary btn-lg"
                 id="roll-button"
-
-                >
+              >
                 Roll!
               </button>
-					</div>
-				</div>
-				<div class="col-3" id="player1">
-					<div>
-						<h3 class="player-header" id="player-header-1">Player 2</h3>
-					</div>
-					<div class="score-current" id="player1-current">
-						<div class="current-score-heading">
-							<h4>Round Score</h4>
-						</div>
-						<div class="current-score-box" id="score-box-1"></div>
-					</div>
-					<div class="score-output">
-						<div class="score-heading">
-							<h4>Total Score</h4>
-						</div>
-						<div class="score-total" id="player-score-1"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<div class="row no-gutters">
-			<div class="col-12 restart-buttons">
-				<button
+            </div>
+          </div>
+          <div class="col-3 active-area" id="player1">
+            <div>
+              <h3 class="player-header" id="player-header-1">Player 2</h3>
+            </div>
+            <div class="score-current" id="player1-current">
+              <div class="current-score-heading">
+                <h4>Round Score</h4>
+              </div>
+              <div class="current-score-box" id="score-box-1"></div>
+            </div>
+            <div class="score-output">
+              <div class="score-heading">
+                <h4>Total Score</h4>
+              </div>
+              <div class="score-total" id="player-score-1"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row no-gutters">
+        <div class="col-12 restart-buttons">
+          <button
             type="button"
             class="btn btn-secondary btn-lg"
             id="newGameButton"
@@ -132,63 +135,119 @@
           >
             New Game
           </button>
-			</div>
-		</div>
-		<!-- Rules Modal -->
-		<div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Rules of the Game</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-					</div>
-					<div class="modal-body">
-						The game consists of 2 players and 5 dice. The player with the highest score after 5 rounds
-						wins.</br></br>
+        </div>
+      </div>
 
-						1. Each round starts with the player rolling 5 unstuck dice.</br></br>
-						2. Once the dice are rolled, those dice with numbers 1, 3, 4 or 6 get added to the round
-						score.</br></br>
-						3. Those dice that land on a 2 or 5 are 'Stuck' and removed from the unstuck total.</br></br>
-						4. The player continues to roll until all 5 unstuck dice are lost and the turn is over. The
-						round score is then added to the player's total.</br></br>
-						5. Player 2 repeats this process and so on until all 5 rounds are played out. At this point the
-						player with the highest score wins !
-						</br></br>
-					</div>
-				</div>
-			</div>
-		</div>
-		</div>
+      <!-- Welcome Modal -->
 
-		<!-- Stuck Modal -->
-		<div class="modal fade" id="stuckModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-			aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-body">
-						<h5 class="modal-title" id="exampleModalLabel">You're Stuck! </h5>
-                        <img
-                  id="sad-face"
-                  src="assets/images/sad.png"
-                  alt="sad face"
-                />
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                        </button>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div
+        class="modal fade"
+        id="welcomeModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h5 class="modal-title" id="welcomeModalLabel">
+                Welcome to Stuck in the Mud !
+                <span>
+                  <img src="assets/images/dots-block.png" alt="pig"
+                /></span>
+              </h5>
+            </div>
+            <div class="modal-footer">
+              <h5>Click New Game to Start</h5>
+            </div>
+          </div>
+        </div>
+      </div>
 
-	</footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<script src="assets/js/index.js"></script>
-</body>
+      <!-- Rules Modal -->
+      <div
+        class="modal fade"
+        id="rulesModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Rules of the Game</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              The game consists of 2 players and 5 dice. The player with the
+              highest score after 5 rounds wins.<br /><br />
 
+              1. Each round starts with the player rolling 5 unstuck dice.<br /><br />
+              2. Once the dice are rolled, those dice with numbers 1, 3, 4 or 6
+              get added to your round score.<br /><br />
+              3. Those dice that land on a 2 or 5 are 'Stuck' and removed from
+              the unstuck total.<br /><br />
+              4. The active player continues to roll until all 5 unstuck dice
+              are lost and the turn is over. The round score is then added to
+              the player's total.<br /><br />
+              5. Player 2 repeats this process and so on until all 5 rounds are
+              played out. At this point the player with the highest score wins !
+              <br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stuck Modal -->
+      <div
+        class="modal fade"
+        id="stuckModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h5 class="modal-title" id="stuckModalTitle">You're Stuck!</h5>
+              <img id="sad-face" src="assets/images/sad.png" alt="sad face" />
+            </div>
+            <div class="modal-footer" id="stuckModalFooter">
+              <h5></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Winner Modal -->
+      <div
+        class="modal fade"
+        id="winnerModal"
+        tabindex="-1"
+        role="dialog"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <h1 class="modal-title" id="winnerTitle"></h1>
+              <img id="winner" src="assets/images/winner.gif" alt="winner" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>

@@ -7,18 +7,11 @@
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
-    font-family: 'Bill';
-    src:    url('../fonts/Billionaire.otf') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /* Body */
 
 body {
     background: url("../images/background.jpg");
-    background-position: fixed;
 }
 
 /* header */ 
@@ -129,7 +122,7 @@ body {
 #dice-area ul li {
     list-style:none;
     display: inline;  
-    align-self: middle;
+    align-self: center;
 }
 .dice {
     padding:4px;

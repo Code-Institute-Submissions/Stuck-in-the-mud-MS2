@@ -127,4 +127,3 @@ This project was deployed using GitHub pages can found [here](https://stevepilch
 - Additional Javascript learning from Jonas Schmedtmann's course The Complete JavaScript Course 2020 on Udemy.com [Udemy](https://www.udemy.com/course/the-complete-javascript-course/)
 - I received inspiration for this project from [Pinterest](https://www.pinterest.co.uk/pilchy1983/developer-ideas/). 
 - Code debugging help from my mentor Adegbenga Adeye
-

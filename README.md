@@ -24,8 +24,7 @@ The UX is a simple single page with areas cleary defined. The player scores are 
 
 The linked file to the wireframe mockup of the website.
 
-[Wireframe PDF](https://github.com/StevePilcher/
-Stuck-in-the-mud-MS2/blob/master/assets/files/Wireframe.pdf)
+[Wireframe PDF](https://github.com/StevePilcher/Stuck-in-the-mud-MS2/blob/master/assets/files/Wireframe.pdf)
 
 
 ## Features
@@ -85,6 +84,10 @@ The following Web Browsers were tested and no errors found;
 ### W3C CSS Validator 
 
 - No errors or warnings were found on style.css
+
+### JSHint
+
+- No errors were found after running JS through JShint
  
 ## Testing Scenarios
 

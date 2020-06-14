@@ -117,7 +117,7 @@ This project was deployed using GitHub pages can found [here](https://stevepilch
 ## Credits
 - Fonts taken from [Google Fonts](https://fonts.google.com) and [DaFont](https://www.dafont.com/run-to-the-hills.font)
 - Dice images from [WP ClipArt](https://www.wpclipart.com)
-- Pig Image from .[TOP PNG] (https://toppng.com)
+- Pig Image from [TOP PNG](https://toppng.com)
 
 ### Media
 - Background image by Photo by Riho Kroll found on [Unsplash](https://unsplash.com) 

@@ -1,4 +1,4 @@
-var scores, roundScore, activePlayer, roundCounter, unstuckDice, previousRound, roundNumber, previousStuck, roundStuck, gameActive;
+var scores, roundScore, activePlayer, roundCounter, unstuckDice, roundNumber, previousStuck, gameActive;
 
 scores = [0,0];
 roundScore = 0;
@@ -13,7 +13,7 @@ $(document).ready(); {
     $('#welcomeModal').modal();
     hide();
 
-};
+}
 
 
 function hide() {
@@ -23,7 +23,7 @@ function hide() {
   $('#player0').removeClass('active-area');
   $('#player1').removeClass('active-area');
   $('#roll-button').prop('disabled', true);
-};
+}
 
 
 
@@ -31,7 +31,7 @@ function hide() {
 
 function roll() {
     return (Math.floor(Math.random() * 6) + 1);
-};
+}
 
 
 
@@ -104,7 +104,7 @@ $('#roll-button').on('click', function() {
             $('#dice1').attr('src' , 'assets/images/dots-6.png');
             $('#dice1').css('display','block');
             roundScore += dice1;
-        };
+        }
 
     var dice2 = roll();
         if (dice2 === 2 || dice2 === 5) {
@@ -127,7 +127,7 @@ $('#roll-button').on('click', function() {
             $('#dice2').attr('src' , 'assets/images/dots-6.png');
             $('#dice2').css('display','block');
             roundScore += dice2;
-        };
+        }
 
     var dice3 = roll();
         if (dice3 === 2 || dice3 === 5) {
@@ -150,7 +150,7 @@ $('#roll-button').on('click', function() {
             $('#dice3').attr('src' , 'assets/images/dots-6.png');
             $('#dice3').css('display','block');
             roundScore += dice3;
-        };
+        }
 
        
     var dice4 = roll();
@@ -174,7 +174,7 @@ $('#roll-button').on('click', function() {
             $('#dice4').attr('src' , 'assets/images/dots-6.png');
             $('#dice4').css('display','block');
             roundScore += dice4;
-        };
+        }
 
         var dice5 = roll();
         if (dice5 === 2 || dice5 === 5) {
@@ -197,7 +197,7 @@ $('#roll-button').on('click', function() {
             $('#dice5').attr('src' , 'assets/images/dots-6.png');
             $('#dice5').css('display','block');
             roundScore += dice5;
-        };
+        }
 
         var roundStuck = (unstuckDice - previousStuck);
             $('#score-box-'+ activePlayer).text(roundScore);
@@ -213,7 +213,7 @@ $('#roll-button').on('click', function() {
             $('#stuckModal').modal();
             $('#player-score-'+ activePlayer).text(scores[activePlayer]);
             switchPlayer();
-      };
+      }
 });
 
 // Swtich Player Function 
@@ -239,14 +239,14 @@ function switchPlayer() {
         
         if (roundCounter > 5) {
             ending();
-        };
+        }
          
-    }; 
+    } 
     unstuckDice = 5;
     $('#unstuckNumber').text('Unstuck Dice '+ unstuckDice);
       roundScore = 0;
       previousStuck = 0;
-};
+}
 
 
 // Game Winner 
@@ -261,10 +261,9 @@ function ending () {
      
         } else {
         $('#winnerModal').modal();
-        $('#stuckModal').modal('hide')
+        $('#stuckModal').modal('hide');
         $('#player-header-1').text('WINNER');
         $('#winnerTitle').text('Player 2 is the');
         
     }
-};
-
+}

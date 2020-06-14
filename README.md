@@ -1,6 +1,6 @@
 # Stuck in the Mud (Dice Game) -  Milestone 2 Project
 
-![alt text] (https://github.com/StevePilcher/Stuck-in-the-mud-MS2/blob/master/assets/files/site-image.PNG)
+![alt text](assets/files/site-image.PNG)
 
 This project was created for my Milestone 2 project for the Code Institute's Full Stack Dev course. The project requirements were to build a interactive frontend website using HTML, CSS and Javascript. 
 

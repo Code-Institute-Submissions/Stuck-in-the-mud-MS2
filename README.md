@@ -24,7 +24,7 @@ The UX is a simple single page with areas cleary defined. The player scores are 
 
 The linked file to the wireframe mockup of the website.
 
-[Wireframe PDF](https://github.com/StevePilcher/Stuck-in-the-mud-MS2/blob/master/assets/files/Wireframe.pdf)
+[Wireframe PDF](https://github.com/StevePilcher/Stuck-in-the-mud-MS2/blob/master/assets/WireframeMS2.pdf)
 
 
 ## Features

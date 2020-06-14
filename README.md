@@ -1,7 +1,6 @@
 # Stuck in the Mud (Dice Game) -  Milestone 2 Project
 
-![alt text](https://github.com/StevePilcher/
-Stuck-in-the-mud-MS2/blob/master/assets/files/site-image.PNG)
+![alt text](https://github.com/StevePilcher/Stuck-in-the-mud-MS2/blob/master/assets/files/site-image.PNG)
 
 This project was created for my Milestone 2 project for the Code Institute's Full Stack Dev course. The project requirements were to build a interactive frontend website using HTML, CSS and Javascript. 
 
@@ -117,19 +116,15 @@ This project was deployed using GitHub pages can found [here](https://stevepilch
 
 ## Credits
 - Fonts taken from [Google Fonts](https://fonts.google.com) and [DaFont](https://www.dafont.com/run-to-the-hills.font)
-- Dice images from [FontAwesome]()
-
-
-### Content
-
+- Dice images from [WP ClipArt](https://www.wpclipart.com)
+- Pig Image from .[TOP PNG] (https://toppng.com)
 
 ### Media
 - Background image by Photo by Riho Kroll found on [Unsplash](https://unsplash.com) 
 - Dice images found on  
 
 ### Acknowledgements
-
+- Additional Javascript learning from Jonas Schmedtmann's course The Complete JavaScript Course 2020 on Udemy.com [Udemy](https://www.udemy.com/course/the-complete-javascript-course/)
 - I received inspiration for this project from [Pinterest](https://www.pinterest.co.uk/pilchy1983/developer-ideas/). 
 - Code debugging help from my mentor Adegbenga Adeye
-- Youtube tutorial on parallax image effect from [iEatWebsites](https://www.youtube.com/watch?v=d34GsFz-HkY)
-- I used this information to help format my iframes [Ben Marshall](https://benmarshall.me/responsive-iframes/)
+

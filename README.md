@@ -67,8 +67,14 @@ The following Web Browsers were tested and no errors found;
 
 ### Mobile Device 
 
-- No mobile testing was done. Site was designed for desktop only.
+Chrome Dev tools were used to simulate the following devices for testing;
 
+- iPhone X 
+- Pixel 2 & 2XL
+- Samsung S10 Plus 
+- Samsung Galaxy Tab (Portrait)
+- iPad (Portrait) 
+- 
 ### Known Issues
 
 - Stuck modal appears after game has been won.

@@ -104,6 +104,7 @@ body {
     display: inline-block;
     justify-content: center;
     }
+
 #banner-area {
     height: 250px;
 }
@@ -164,3 +165,132 @@ body {
 }
 
 
+
+/* Media Queries */ 
+
+@media screen and (max-width: 768px) {
+
+
+#play-area {
+    height: 500px;
+}
+.active-area {
+    height: 500px;    
+}
+
+.player-header {
+    font-size: 25px;
+
+}
+.active-player::after {
+    content:"\22B2";
+    color:#c7c038;
+    font-size: 45px;
+    position: absolute;
+    top: 17px;    
+}
+
+.score-current {
+    font-size: 50px;
+    height: 175px;
+}
+.score-total {
+    font-size: 75px;
+}
+
+#banner-area {
+    height: 150px;
+}
+
+.dice {
+    height: 65px;
+}
+
+.restart-buttons {
+    margin-top: 50px;
+}
+#winnerModal img {
+    width: 465px;
+}
+}
+
+@media screen and (max-width: 420px) {
+
+#page-header {
+    margin-top:25px;
+    margin-bottom:25px;
+}
+
+#page-title {
+    font-size: 40px;
+}
+
+#play-area {
+    height: 475px;
+}
+
+.player-header {
+    font-size: 15px;
+    padding-top: 15px;
+
+}
+.active-player::after {
+    content:"\22B2";
+    color:#c7c038;
+    font-size: 15px;
+    position: absolute;
+    top: 15px;    
+}
+.active-area {
+    height: 475px;    
+}
+
+.score-heading h4 {
+    font-size:15px;
+
+}
+.score-current {
+    font-size: 75px;
+    height: 175px;
+}
+.score-total {
+    font-size: 50px;
+    padding-top: 35px;
+}
+.score-output {
+    height: 200px;
+}
+
+#banner-area {
+    height: 100px;
+}
+.roundNumbers {
+    padding-top: 10px;
+}
+#round-counter {
+    font-size: 20px;
+}
+
+.dice {
+    height: 65px;
+}
+
+.restart-buttons {
+    margin-top: 100px;
+}
+#winnerModal img {
+    width: 325px;
+}
+#dice-area ul {
+    display: block;
+    margin-block-start: 0;
+    justify-content:center;
+    align-items:center;
+    height: 400px;
+    width: 100%;
+}
+#dice-area ul li img {
+    margin-left: 1.75em;
+    
+}
+}

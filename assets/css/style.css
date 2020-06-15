@@ -127,6 +127,7 @@ body {
 }
 .dice {
     padding:4px;
+    height: 130px;
 }
 
 #button-box {
@@ -167,6 +168,13 @@ body {
 
 
 /* Media Queries */ 
+
+@media screen and (max-width: 1600px) {
+
+.dice {
+    height: 100px;
+}
+}
 
 @media screen and (max-width: 768px) {
 
